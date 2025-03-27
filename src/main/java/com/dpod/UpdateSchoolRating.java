@@ -15,8 +15,11 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.BiConsumer;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,20 +28,31 @@ public class UpdateSchoolRating {
     public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     public static void main(String[] args) throws Exception {
+        int year = 2024;
+        BiConsumer<School, Double> rankingSetter = School::setRating2024;
+        Function<School, Double> rankingGetter = School::getRating2024;
+
         OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         List<School> schools = OBJECT_MAPPER.readValue(UpdateSchoolRating.class.getResource("/schools/Wroclaw/schools.json"), new TypeReference<List<School>>() {
         });
-        List<School> schoolWithRatingList = readSchoolRatingList("/Ranking Szkół Podstawowych 2024.html");
+
+        List<School> schoolWithRatingList = readSchoolRatingList("/Ranking Szkół Podstawowych " + year + ".html", rankingSetter);
         schools.forEach(school -> {
             String name = school.name;
             searchSchoolWithRatingByName(name, schoolWithRatingList).ifPresentOrElse(
-                    schoolWithRating -> school.setRating2024(schoolWithRating.rating2024),
+                    schoolWithRating -> rankingSetter.accept(school, rankingGetter.apply(schoolWithRating)),
                     () -> {
                         System.out.println("Not found school " + name);
-                        school.setRating2024(-1);
+                        rankingSetter.accept(school, -1d);
                     });
         });
-        schools = schools.stream().sorted((o1, o2) -> o2.rating2025 - o1.rating2025 > 0 ? 1 : -1).toList();
+
+        // always sort by the latest year
+        schools = schools.stream()
+                .sorted(Comparator
+                        .comparing(School::getRating2025).reversed()
+                        .thenComparing(School::getName))
+                .toList();
 
         String json = OBJECT_MAPPER.writeValueAsString(schools);
         System.out.println(json);
@@ -50,7 +64,7 @@ public class UpdateSchoolRating {
                 .findFirst();
     }
 
-    private static List<School> readSchoolRatingList(String filename) throws IOException, URISyntaxException {
+    private static List<School> readSchoolRatingList(String filename, BiConsumer<School, Double> rankingSetter) throws IOException, URISyntaxException {
         List<School> schoolWithRatingList = new ArrayList<>();
         // Connect to the webpage and fetch its HTML content
         URL htmlFile = UpdateSchoolRating.class.getResource(filename);
@@ -77,7 +91,7 @@ public class UpdateSchoolRating {
             String text = aElements.get(0).text();
             Element tdRanking = tdElements.get(3);
             String ratingAsString = tdRanking.text().split(" ")[0];
-            School school = createSchoolRating(text, ratingAsString);
+            School school = createSchoolRating(text, ratingAsString, rankingSetter);
             schoolWithRatingList.add(school);
 
             // print school name and ranking
@@ -114,12 +128,12 @@ public class UpdateSchoolRating {
         throw new IllegalStateException();
     }
 
-    private static School createSchoolRating(String text, String ratingAsString) {
+    private static School createSchoolRating(String text, String ratingAsString, BiConsumer<School, Double> rankingSetter) {
         double rating = Double.parseDouble(ratingAsString);
         School school = new School();
         school.setName(text);
         school.setNumber(getSchoolNumber(text));
-        school.setRating2024(rating);
+        rankingSetter.accept(school, rating);
         return school;
     }
 
