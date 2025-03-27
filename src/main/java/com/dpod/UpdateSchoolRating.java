@@ -28,12 +28,13 @@ public class UpdateSchoolRating {
     public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     public static void main(String[] args) throws Exception {
-        int year = 2024;
-        BiConsumer<School, Double> rankingSetter = School::setRating2024;
-        Function<School, Double> rankingGetter = School::getRating2024;
+        String jsonPath = "/schools/Warsaw/schools.json";
+        int year = 2025;
+        BiConsumer<School, Double> rankingSetter = School::setRating2025;
+        Function<School, Double> rankingGetter = School::getRating2025;
 
         OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        List<School> schools = OBJECT_MAPPER.readValue(UpdateSchoolRating.class.getResource("/schools/Wroclaw/schools.json"), new TypeReference<List<School>>() {
+        List<School> schools = OBJECT_MAPPER.readValue(UpdateSchoolRating.class.getResource(jsonPath), new TypeReference<>() {
         });
 
         List<School> schoolWithRatingList = readSchoolRatingList("/Ranking Szkół Podstawowych " + year + ".html", rankingSetter);
