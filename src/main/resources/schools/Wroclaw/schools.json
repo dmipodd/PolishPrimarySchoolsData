@@ -1054,6 +1054,15 @@
     "longitude": 16.993832367248764
   },
   {
+    "name": "Szkoła Podstawowa Zdrój Wrocław",
+    "rating2025": -1.0,
+    "rating2024": -1.0,
+    "rating2023": 72.993,
+    "rating2022": 0.0,
+    "latitude": 51.175744468197024,
+    "longitude": 17.004748967570062
+  },
+  {
     "name": "Szkoła Podstawowa nr 11 Wrocław",
     "rating2025": -1.0,
     "rating2024": -1.0,
@@ -1073,15 +1082,6 @@
   },
   {
     "name": "Szkoła Podstawowa nr 60 Wrocław",
-    "rating2025": -1.0,
-    "rating2024": -1.0,
-    "rating2023": -1.0,
-    "rating2022": 0.0,
-    "latitude": 51.175744468197024,
-    "longitude": 17.004748967570062
-  },
-  {
-    "name": "Szkoła Podstawowa Zdrój Wrocław",
     "rating2025": -1.0,
     "rating2024": -1.0,
     "rating2023": -1.0,
