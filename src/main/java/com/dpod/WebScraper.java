@@ -148,8 +148,7 @@ public class WebScraper {
         School school = new School();
         school.setName(text);
         school.setNumber(getSchoolNumber(text));
-        school.setRating(rating);
-        school.setYear(2024);
+        school.setRating2025(rating);
         return school;
     }
 

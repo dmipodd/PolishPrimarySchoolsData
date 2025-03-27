@@ -2,12 +2,38 @@ package com.dpod.bean;
 
 public class School {
 
-    public int year;
     public String name;
     public String number;
-    public double rating;
+    public double rating2025;
+    public double rating2024;
+    public double rating2023;
+    public double rating2022;
     public Double latitude;
     public Double longitude;
+
+    public double getRating2024() {
+        return rating2024;
+    }
+
+    public void setRating2024(double rating2024) {
+        this.rating2024 = rating2024;
+    }
+
+    public double getRating2023() {
+        return rating2023;
+    }
+
+    public void setRating2023(double rating2023) {
+        this.rating2023 = rating2023;
+    }
+
+    public double getRating2022() {
+        return rating2022;
+    }
+
+    public void setRating2022(double rating2022) {
+        this.rating2022 = rating2022;
+    }
 
     @Override
     public String toString() {
@@ -19,14 +45,6 @@ public class School {
         longitude = 0d;
     }
 
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
     public String getName() {
         return name;
     }
@@ -35,12 +53,12 @@ public class School {
         this.name = name;
     }
 
-    public double getRating() {
-        return rating;
+    public double getRating2025() {
+        return rating2025;
     }
 
-    public void setRating(double rating) {
-        this.rating = rating;
+    public void setRating2025(double rating2025) {
+        this.rating2025 = rating2025;
     }
 
     public Double getLatitude() {
