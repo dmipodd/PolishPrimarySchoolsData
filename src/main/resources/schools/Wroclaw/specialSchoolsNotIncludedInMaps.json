@@ -1,0 +1,23 @@
+[
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Specjalna nr 88 Wrocław",
+    "rating": 18.598,
+    "latitude": 51.08784102782308,
+    "longitude": 17.034170623089448
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa dla Dorosłych nr 1 Wrocław",
+    "rating": 21.776,
+    "latitude": 51.10067495031368,
+    "longitude": 17.02315526230585
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Specjalna nr 86 dla Niedostosowanych Społecznie Wrocław",
+    "rating": 29.655,
+    "latitude": 51.13441561987359,
+    "longitude": 16.884579640358574
+  }
+]

@@ -1,6 +1,6 @@
 package com.dpod;
 
-import com.dpod.bean.SchoolRating;
+import com.dpod.bean.School;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
@@ -27,7 +27,7 @@ public class WebScraper {
 
     public static void main(String[] args) throws Exception {
         OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        List<SchoolRating> schoolRatingList = new ArrayList<>();
+        List<School> schoolWithRatingList = new ArrayList<>();
         // Connect to the webpage and fetch its HTML content
         URL htmlFile = WebScraper.class.getResource("/Ranking Szkół Podstawowych Wrocław 2025.html");
         Document doc = Jsoup.parse(new File(htmlFile.toURI()), StandardCharsets.UTF_8.name());
@@ -53,37 +53,70 @@ public class WebScraper {
             String text = aElements.get(0).text();
             Element tdRanking = tdElements.get(3);
             String ratingAsString = tdRanking.text().split(" ")[0];
-            SchoolRating schoolRating = createSchoolRating(text, ratingAsString);
-            schoolRatingList.add(schoolRating);
+            School school = createSchoolRating(text, ratingAsString);
+            schoolWithRatingList.add(school);
 
             // print school name and ranking
             System.out.println(text + "," + ratingAsString);
         }
 
-        Map<Boolean, List<SchoolRating>> partitionedList = schoolRatingList.stream()
-                .collect(Collectors.partitioningBy(schoolRating -> StringUtils.isNotBlank(schoolRating.number)));
-        List<SchoolRating> schoolsWithNumbers = partitionedList.get(true);
-        List<SchoolRating> schoolsWithoutNumbers = partitionedList.get(false);
+        Map<Boolean, List<School>> partitionedList = schoolWithRatingList.stream()
+                .collect(Collectors.partitioningBy(school -> StringUtils.isNotBlank(school.number)));
+        List<School> schoolsWithNumbers = partitionedList.get(true);
+        List<School> schoolsWithoutNumbers = partitionedList.get(false);
 
         // print json without coordinates
-        String json = OBJECT_MAPPER.writeValueAsString(schoolRatingList);
-        System.out.println(json);
 
-        List<String> lines = Files.readAllLines(Path.of(WebScraper.class.getResource("/scholls_coordinates.js").toURI()));
-        partitionedList = lines.stream()
-                .map(line -> extractValues(line))
-                .collect(Collectors.partitioningBy(schoolRating -> StringUtils.isNotBlank(schoolRating.number)));
-        List<SchoolRating> schoolsWithNumbersFromJS = partitionedList.get(true);
-        List<SchoolRating> schoolsWithoutNumbersFromJS = partitionedList.get(false);
-        schoolsWithNumbers.forEach(schoolRating -> {
-            System.out.println(schoolsWithNumbersFromJS.stream()
-                    .filter(name -> schoolRating.number.equals(name.getNumber()))
-                    .map(SchoolRating::getName)
-                    .findFirst().orElse("AAAAAAAAAAAA"));
-        });
+        List<String> lines = Files.readAllLines(Path.of(WebScraper.class.getResource("/script_with_geo_wroclaw.js").toURI()));
+        List<School> schoolWithGeodataList = lines.stream()
+                .map(WebScraper::extractValues)
+                .toList();
+
+
+        Map<String, School> mapByNumber = schoolWithRatingList.stream().collect(Collectors.toMap(school -> {
+            if (StringUtils.isNotBlank(school.number)) {
+                return school.number;
+            }
+            return school.name;
+        }, school -> school));
+        List<School> schoolsWithFullData = new ArrayList<>();
+        List<School> schoolsWithoutRating = new ArrayList<>();
+        for (var schoolWithGeodata: schoolWithGeodataList) {
+            String key = schoolWithGeodata.number;
+            School found = mapByNumber.get(key);
+            if (found != null) {
+                found.longitude = schoolWithGeodata.longitude;
+                found.latitude = schoolWithGeodata.latitude;
+                schoolsWithFullData.add(found);
+            } else {
+                key = schoolWithGeodata.name;
+                found = mapByNumber.get(key);
+                if (found != null) {
+                    schoolsWithFullData.add(found);
+                } else {
+                    schoolsWithoutRating.add(schoolWithGeodata);
+                }
+            }
+            mapByNumber.remove(key);
+        }
+        List<School> schoolsWithoutGeoData = mapByNumber.values().stream().peek(School::setZeroGeo).toList();
+
+        String json = OBJECT_MAPPER.writeValueAsString(schoolsWithFullData);
+        System.out.println(json);
+        System.out.println("-----------------------------------------");
+        json = OBJECT_MAPPER.writeValueAsString(schoolsWithoutGeoData);
+        System.out.println(json);
+        System.out.println("-----------------------------------------");
+        //.collect(Collectors.partitioningBy(school -> StringUtils.isNotBlank(school.number)));
+//        List<School> schoolsWithNumbersFromJS = partitionedList.get(true);
+//        List<School> schoolsWithoutNumbersFromJS = partitionedList.get(false);
+
+
     }
 
-    public static SchoolRating extractValues(String input) {
+
+
+    public static School extractValues(String input) {
         Pattern pattern = Pattern.compile("gm_punkt\\('\\d+','(.*?)','(.*?)', \\\"<b>(.*?)</b>");
         Matcher matcher = pattern.matcher(input);
         String name = "";
@@ -92,30 +125,32 @@ public class WebScraper {
             String longitude = matcher.group(2);
             name = matcher.group(3);
 
+            name += " Wrocław";
+
             System.out.println("Latitude: " + latitude);
             System.out.println("Longitude: " + longitude);
             System.out.println("Name: " + name);
 
-            SchoolRating schoolRating = new SchoolRating();
-            schoolRating.setName(name);
-            schoolRating.setNumber(getSchoolNumber(name));
-            schoolRating.setLatitude(Double.parseDouble(latitude));
-            schoolRating.setLongitude(Double.parseDouble(longitude));
-            return schoolRating;
+            School school = new School();
+            school.setName(name);
+            school.setNumber(getSchoolNumber(name));
+            school.setLatitude(Double.parseDouble(latitude));
+            school.setLongitude(Double.parseDouble(longitude));
+            return school;
         } else {
             System.out.println("No match found.");
         }
         throw new IllegalStateException();
     }
 
-    private static SchoolRating createSchoolRating(String text, String ratingAsString) {
+    private static School createSchoolRating(String text, String ratingAsString) {
         double rating = Double.parseDouble(ratingAsString);
-        SchoolRating schoolRating = new SchoolRating();
-        schoolRating.setName(text);
-        schoolRating.setNumber(getSchoolNumber(text));
-        schoolRating.setRating(rating);
-        schoolRating.setYear(2024);
-        return schoolRating;
+        School school = new School();
+        school.setName(text);
+        school.setNumber(getSchoolNumber(text));
+        school.setRating(rating);
+        school.setYear(2024);
+        return school;
     }
 
     private static String getSchoolNumber(String text) {

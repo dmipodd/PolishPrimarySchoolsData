@@ -1,6 +1,6 @@
 package com.dpod.bean;
 
-public class SchoolRating {
+public class School {
 
     public int year;
     public String name;
@@ -8,6 +8,16 @@ public class SchoolRating {
     public double rating;
     public Double latitude;
     public Double longitude;
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public void setZeroGeo() {
+        latitude = 0d;
+        longitude = 0d;
+    }
 
     public int getYear() {
         return year;

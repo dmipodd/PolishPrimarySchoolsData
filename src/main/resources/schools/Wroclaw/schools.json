@@ -1,0 +1,852 @@
+[
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Integracyjna nr 103 Wrocław",
+    "rating": 29.75,
+    "latitude": 51.11526327544377,
+    "longitude": 16.95593736735804
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 96 im. Leonida Teligi Wrocław",
+    "number": "96",
+    "rating": 35.806,
+    "latitude": 51.095963,
+    "longitude": 17.0573477
+  },
+  {
+    "year": 2024,
+    "name": "Szermiercza Sportowa Szkoła Podstawowa nr 85 im. prof. Mariana Suskiego Wrocław",
+    "number": "85",
+    "rating": 35.829,
+    "latitude": 51.105869,
+    "longitude": 17.0469301
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 74 im. Prymasa Tysiąclecia Wrocław",
+    "number": "74",
+    "rating": 37.43,
+    "latitude": 51.126674,
+    "longitude": 17.0344114
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 78 im. Mikołaja Kopernika Wrocław",
+    "number": "78",
+    "rating": 37.769,
+    "latitude": 51.1276068,
+    "longitude": 17.0529381
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 58 im. Wandy Rutkiewicz Wrocław",
+    "number": "58",
+    "rating": 37.806,
+    "latitude": 51.1198636,
+    "longitude": 17.0272735
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 43 z Oddziałami Integracyjnymi im. Jana Kaczmarka Wrocław",
+    "number": "43",
+    "rating": 43.924,
+    "latitude": 51.0971699189122,
+    "longitude": 17.002896869650925
+  },
+  {
+    "year": 2024,
+    "name": "Autorska Szkoła Podstawowa Galileo Wrocław",
+    "rating": 44.19,
+    "latitude": 51.11734502643819,
+    "longitude": 17.014454879341898
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 75 z Oddziałami Integracyjnymi im. Henryka Sienkiewicza Wrocław",
+    "number": "75",
+    "rating": 45.576,
+    "latitude": 51.1407156,
+    "longitude": 16.9674973
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 107 im. Piotra Włostowicza Wrocław",
+    "number": "107",
+    "rating": 45.787,
+    "latitude": 51.1197472,
+    "longitude": 17.0495775
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 18 Wrocław",
+    "number": "18",
+    "rating": 46.116,
+    "latitude": 51.1170484,
+    "longitude": 17.0066949
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 67 im. Kawalerów Orderu Uśmiechu Wrocław",
+    "number": "67",
+    "rating": 46.584,
+    "latitude": 51.1050785,
+    "longitude": 17.0269149
+  },
+  {
+    "year": 2024,
+    "name": "Społeczna Szkoła Podstawowa z Oddziałami Integracyjnymi Amigo Wrocław",
+    "rating": 47.191,
+    "latitude": 51.09716557302462,
+    "longitude": 17.002881939622466
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 2 im. Henryka Sucharskiego Wrocław",
+    "number": "2",
+    "rating": 47.393,
+    "latitude": 51.1034431,
+    "longitude": 17.0410194
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 30 Wrocław",
+    "number": "30",
+    "rating": 48.16,
+    "latitude": 51.0971886,
+    "longitude": 17.016425
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 108 im. Juliana Tuwima Wrocław",
+    "number": "108",
+    "rating": 48.224,
+    "latitude": 51.1207084,
+    "longitude": 17.0351294
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 8 im. Józefa Piłsudskiego Wrocław",
+    "number": "8",
+    "rating": 49.558,
+    "latitude": 51.1322401,
+    "longitude": 17.1073088
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 97 im. Jana Brzechwy Wrocław",
+    "number": "97",
+    "rating": 50.268,
+    "latitude": 51.104642935476896,
+    "longitude": 17.018636818490382
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 19 im. Bolesława Chrobrego Wrocław",
+    "number": "19",
+    "rating": 50.375,
+    "latitude": 51.1371894,
+    "longitude": 16.9556299
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 45 im. Janusza Kusocińskiego Wrocław",
+    "number": "45",
+    "rating": 50.565,
+    "latitude": 51.1096507,
+    "longitude": 17.0961325
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 99 im. Tadeusza Kościuszki Wrocław",
+    "number": "99",
+    "rating": 50.974,
+    "latitude": 51.0779023,
+    "longitude": 17.0808861
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 51 im. Jana Pawła II Wrocław",
+    "number": "51",
+    "rating": 51.205,
+    "latitude": 51.1502591,
+    "longitude": 16.8596439
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 90 im. prof. Stanisława Tołpy Wrocław",
+    "number": "90",
+    "rating": 51.834,
+    "latitude": 51.0785052,
+    "longitude": 17.0430864
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 95 im. Jarosława Iwaszkiewicza Wrocław",
+    "number": "95",
+    "rating": 52.161,
+    "latitude": 51.15051,
+    "longitude": 16.8943032
+  },
+  {
+    "year": 2024,
+    "name": "Autorska Szkoła Podstawowa Jaskółka Wrocław",
+    "rating": 52.181,
+    "latitude": 51.11776950260578,
+    "longitude": 17.02056099370241
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 113 im. Adama Rapackiego Wrocław",
+    "number": "113",
+    "rating": 52.497,
+    "latitude": 51.1172809,
+    "longitude": 16.9513679
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Fundacji Królowej św. Jadwigi Wrocław",
+    "rating": 52.942,
+    "latitude": 51.110643902789604,
+    "longitude": 17.004946820858788
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 33 Wrocław",
+    "number": "33",
+    "rating": 53.858,
+    "latitude": 51.13505887488106,
+    "longitude": 16.97174595419211
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 21 im. Mieszka I Wrocław",
+    "number": "21",
+    "rating": 54.326,
+    "latitude": 51.1422986,
+    "longitude": 16.9901206
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 42 Wrocław",
+    "number": "42",
+    "rating": 54.6,
+    "latitude": 51.06468031123327,
+    "longitude": 16.973031771752026
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 68 im. II Tysiąclecia Wrocławia Wrocław",
+    "number": "68",
+    "rating": 54.659,
+    "latitude": 51.09847780739776,
+    "longitude": 17.0115822159838
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 44 im. Jana III Sobieskiego Wrocław",
+    "number": "44",
+    "rating": 54.995,
+    "latitude": 51.15774246006723,
+    "longitude": 17.136406420117865
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 84 im. Ruchu Obrońców Pokoju Wrocław",
+    "number": "84",
+    "rating": 55.185,
+    "latitude": 51.1177293,
+    "longitude": 17.0560189
+  },
+  {
+    "year": 2024,
+    "name": "Sportowa Szkoła Podstawowa nr 46 im. Polskich Olimpijczyków Wrocław",
+    "number": "46",
+    "rating": 55.199,
+    "latitude": 51.1187679,
+    "longitude": 17.0091752
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 20 im. Orła Białego Wrocław",
+    "number": "20",
+    "rating": 55.294,
+    "latitude": 51.1417497,
+    "longitude": 17.0349517
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Mistrzostwa Sportowego Junior Wrocław",
+    "rating": 55.468,
+    "latitude": 51.132101666976624,
+    "longitude": 17.082590382409823
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 22 Wrocław",
+    "number": "22",
+    "rating": 56.126,
+    "latitude": 51.16278916901751,
+    "longitude": 16.906785549487925
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 10 im. Bolesława Krzywoustego Wrocław",
+    "number": "10",
+    "rating": 57.075,
+    "latitude": 51.1440734,
+    "longitude": 17.1315483
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 50 Wrocław",
+    "number": "50",
+    "rating": 57.207,
+    "latitude": 51.1367609,
+    "longitude": 17.0271165
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Edukacja Wrocław",
+    "rating": 57.33,
+    "latitude": 51.09396351289426,
+    "longitude": 17.062063955373226
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 77 im. Tadeusza Różewicza Wrocław",
+    "number": "77",
+    "rating": 57.632,
+    "latitude": 51.08742051732068,
+    "longitude": 17.043140344666
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 17 im. prof. Stanisława Kulczyńskiego Wrocław",
+    "number": "17",
+    "rating": 58.106,
+    "latitude": 51.0870219,
+    "longitude": 17.0379323
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 27 Wrocław",
+    "number": "27",
+    "rating": 58.26,
+    "latitude": 51.1212701,
+    "longitude": 16.9265767
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 26 im. Piastów Śląskich Wrocław",
+    "number": "26",
+    "rating": 58.663,
+    "latitude": 51.154594,
+    "longitude": 16.9293248
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 37 im. kard. Stefana Wyszyńskiego Wrocław",
+    "number": "37",
+    "rating": 58.769,
+    "latitude": 51.1270026,
+    "longitude": 16.9450144
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Montessori Wrocław",
+    "rating": 58.834,
+    "latitude": 51.09321611592778,
+    "longitude": 17.03133575859428
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 53 im. prof. Stefana Banacha Wrocław",
+    "number": "53",
+    "rating": 59.534,
+    "latitude": 51.1030146,
+    "longitude": 17.1545972
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 98 im. Piastów Wrocławskich Wrocław",
+    "number": "98",
+    "rating": 59.637,
+    "latitude": 51.1469067,
+    "longitude": 17.1106459
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 109 im. Edwarda Dembowskiego Wrocław",
+    "number": "109",
+    "rating": 59.654,
+    "latitude": 51.0942237,
+    "longitude": 16.9860356
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 80 im. Tysiąclecia Wrocławia Wrocław",
+    "number": "80",
+    "rating": 59.791,
+    "latitude": 51.0595893,
+    "longitude": 17.0819031
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 25 im. Franciszka Juszczaka Wrocław",
+    "number": "25",
+    "rating": 60.488,
+    "latitude": 51.0952302,
+    "longitude": 16.9505374
+  },
+  {
+    "year": 2024,
+    "name": "Ogólnokształcąca Szkoła Muzyczna I Stopnia im. Karola Szymanowskiego Wrocław",
+    "rating": 60.497,
+    "latitude": 51.10273887372642,
+    "longitude": 17.023892226255573
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 83 im. Jana Kasprowicza Wrocław",
+    "number": "83",
+    "rating": 60.519,
+    "latitude": 51.1356256,
+    "longitude": 17.0563696
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa im. Janusza Korczaka Wysoka",
+    "rating": 60.637,
+    "latitude": 51.04752596514967,
+    "longitude": 17.007873859630102
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 40 im. prof. Bolesława Iwaszkiewicza Wrocław",
+    "number": "40",
+    "rating": 60.665,
+    "latitude": 51.1467082,
+    "longitude": 17.074175
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Inspiracja Wrocław",
+    "rating": 60.665,
+    "latitude": 51.14546991532679,
+    "longitude": 16.875685137053598
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 65 im. prof. Marii Zduniak Wrocław",
+    "number": "65",
+    "rating": 60.666,
+    "latitude": 51.12323793587216,
+    "longitude": 16.98008600261536
+  },
+  {
+    "year": 2024,
+    "name": "Salezjańska Szkoła Podstawowa Wrocław",
+    "rating": 61.113,
+    "latitude": 51.118817675683786,
+    "longitude": 17.045905364315274
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 71 Wrocław",
+    "number": "71",
+    "rating": 61.435,
+    "latitude": 51.1037413,
+    "longitude": 17.0362312
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 39 im. Księdza Jana Twardowskiego Wrocław",
+    "number": "39",
+    "rating": 61.513,
+    "latitude": 51.1659642390632,
+    "longitude": 17.105555518637185
+  },
+  {
+    "year": 2024,
+    "name": "Sportowa Szkoła Podstawowa nr 72 im. Władka Zarembowicza Wrocław",
+    "number": "72",
+    "rating": 62.031,
+    "latitude": 51.09287917019324,
+    "longitude": 17.023197183707314
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 61 im. Janusza Korczaka Wrocław",
+    "number": "61",
+    "rating": 62.558,
+    "latitude": 51.0773867,
+    "longitude": 16.9981094
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 1 im. Marii Dąbrowskiej Wrocław",
+    "number": "1",
+    "rating": 62.814,
+    "latitude": 51.1181307,
+    "longitude": 17.0596504
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 34 Wrocław",
+    "number": "34",
+    "rating": 62.941,
+    "latitude": 51.0557908,
+    "longitude": 17.0285439
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 15 im. Księżnej Jadwigi Śląskiej Wrocław",
+    "number": "15",
+    "rating": 63.081,
+    "latitude": 51.0788416,
+    "longitude": 16.9650561
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 64 im. Władysława Broniewskiego Wrocław",
+    "number": "64",
+    "rating": 63.356,
+    "latitude": 51.070214,
+    "longitude": 17.0116234
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 9 im. Wincentego Pola Wrocław",
+    "number": "9",
+    "rating": 63.743,
+    "latitude": 51.0860452,
+    "longitude": 17.053636
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 91 im. Orląt Lwowskich Wrocław",
+    "number": "91",
+    "rating": 63.785,
+    "latitude": 51.10309364039926,
+    "longitude": 17.11037740683574
+  },
+  {
+    "year": 2024,
+    "name": "Ogólnokształcąca Szkoła Muzyczna I Stopnia nr 2 im. Fryderyka Chopina Wrocław",
+    "rating": 64.212,
+    "latitude": 51.10958973569319,
+    "longitude": 17.095550884244638
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 23 im. gen. Stefana Rowieckiego Wrocław",
+    "number": "23",
+    "rating": 64.442,
+    "latitude": 51.0688297,
+    "longitude": 17.0388037
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 12 im. Marii Składowskiej -Curie Wrocław",
+    "number": "12",
+    "rating": 64.464,
+    "latitude": 51.1094346,
+    "longitude": 17.0604031
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 24 Wrocław",
+    "number": "24",
+    "rating": 64.562,
+    "latitude": 51.1347752,
+    "longitude": 16.8870899
+  },
+  {
+    "year": 2024,
+    "name": "Publiczna Szkoła Podstawowa Marco Polo Wrocław",
+    "rating": 65.346,
+    "latitude": 51.16112657928737,
+    "longitude": 17.12724499634899
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 32 im. 100-lecia Niepodległości Polski Wrocław",
+    "number": "32",
+    "rating": 65.408,
+    "latitude": 51.07222536921105,
+    "longitude": 17.042111786666545
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 16 Wrocław",
+    "number": "16",
+    "rating": 65.416,
+    "latitude": 51.0726189,
+    "longitude": 16.9969963
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 118 im. płk. pil. Bolesława Orlińskiego Wrocław",
+    "number": "118",
+    "rating": 65.503,
+    "latitude": 51.1268691,
+    "longitude": 16.9721591
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 82 im. Budowniczych Wrocławia Wrocław",
+    "number": "82",
+    "rating": 66.895,
+    "latitude": 51.0822137,
+    "longitude": 16.990199
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 4 Wrocław",
+    "number": "4",
+    "rating": 67.113,
+    "latitude": 51.07644149011226,
+    "longitude": 17.008047528417904
+  },
+  {
+    "year": 2024,
+    "name": "Niepubliczna Szkoła Podstawowa International Primary School Wrocław",
+    "rating": 67.525,
+    "latitude": 51.087477129282476,
+    "longitude": 17.021312496852406
+  },
+  {
+    "year": 2024,
+    "name": "Polsko-Niemiecka Szkoła Podstawowa Wrocław",
+    "rating": 68.622,
+    "latitude": 51.128017676792545,
+    "longitude": 16.98244957319423
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 29 im. Konstytucji 3 Maja Wrocław",
+    "number": "29",
+    "rating": 68.681,
+    "latitude": 51.1112974027076,
+    "longitude": 17.04106056633767
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Dialogu Kultur Etz Chaim Wrocław",
+    "rating": 69.258,
+    "latitude": 51.09965216068358,
+    "longitude": 17.00664371370843
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 81 im. Wandy Rutkiewicz Wrocław",
+    "number": "81",
+    "rating": 69.348,
+    "latitude": 51.08531499683963,
+    "longitude": 17.005074397214898
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 66 im. Zbigniewa Herberta Wrocław",
+    "number": "66",
+    "rating": 69.381,
+    "latitude": 51.10536685036681,
+    "longitude": 17.093828990255176
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Ekola Wrocław",
+    "rating": 69.432,
+    "latitude": 51.088233579603255,
+    "longitude": 16.99168922240645
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 28 im. gen. Leopolda Okulickiego Wrocław",
+    "number": "28",
+    "rating": 69.821,
+    "latitude": 51.1061663,
+    "longitude": 16.962453
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 63 im. Anny Jasińskiej Wrocław",
+    "number": "63",
+    "rating": 70.328,
+    "latitude": 51.1061467,
+    "longitude": 17.0357747
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 36 im. Bohaterów Westerplatte Wrocław",
+    "number": "36",
+    "rating": 70.35,
+    "latitude": 51.1203615,
+    "longitude": 17.0826676
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Primus Wrocław",
+    "rating": 70.56,
+    "latitude": 51.11908187624817,
+    "longitude": 17.04862744404158
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 47 Wrocław",
+    "number": "47",
+    "rating": 70.932,
+    "latitude": 51.0802243,
+    "longitude": 17.0114727
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 76 z Oddziałami Sportowymi im. I Armii Wojska Polskiego Wrocław",
+    "number": "76",
+    "rating": 71.015,
+    "latitude": 51.0880786,
+    "longitude": 17.0109621
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Sióstr Salezjanek im. Jana Pawła II Wrocław",
+    "rating": 72.007,
+    "latitude": 51.10686388705066,
+    "longitude": 17.030301770157095
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Iskry Wrocław",
+    "rating": 74.628,
+    "latitude": 51.10040741161572,
+    "longitude": 17.099408397814603
+  },
+  {
+    "year": 2024,
+    "name": "Dwujęzyczna Szkoła Podstawowa ATUT Wrocław",
+    "rating": 77.952,
+    "latitude": 51.07957696804913,
+    "longitude": 16.991334553277397
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 3 im. Mariusza Zaruskiego Wrocław",
+    "number": "3",
+    "rating": 78.064,
+    "latitude": 51.1278586,
+    "longitude": 16.987563
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Parnas Wrocław",
+    "rating": 80.74,
+    "latitude": 51.09888568006602,
+    "longitude": 17.022056854288966
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa im. Unicef Bielany Wrocławskie",
+    "rating": 71.434,
+    "latitude": 51.03804682793872,
+    "longitude": 16.97145566799425
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa im. św. Jadwigi Śląskiej Żerniki Wrocławskie",
+    "rating": 65.009,
+    "latitude": 51.03068837767433,
+    "longitude": 17.060792480551854
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Święta Katarzyna",
+    "rating": 61.096,
+    "latitude": 51.02499391630607,
+    "longitude": 17.11373019589141
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 2 Siechnice",
+    "rating": 67.141,
+    "latitude": 51.03559679414738,
+    "longitude": 17.15306233066124
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 1 im. Mikołaja Kopernika Siechnice",
+    "rating": 55.934,
+    "latitude": 51.034959771041,
+    "longitude": 17.146705221097402
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Tyniec Mały",
+    "rating": 64.37,
+    "latitude": 51.02155083296394,
+    "longitude": 16.91007337411257
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Smolec",
+    "rating": 57.061,
+    "latitude": 51.0734524841172,
+    "longitude": 16.882058380658446
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa Lutynia",
+    "rating": 53.976,
+    "latitude": 51.13377551169363,
+    "longitude": 16.78165974459179
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa im. Jana Pawła II Psary",
+    "rating": 53.15,
+    "latitude": 51.187508905817104,
+    "longitude": 17.031281243901898
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa im. Wandy Chotomskiej Kiełczów",
+    "rating": 62.58,
+    "latitude": 51.13978959108765,
+    "longitude": 17.1758328611169
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa im. Bolesława Krzywoustego Kamieniec Wrocławski",
+    "rating": 56.602,
+    "latitude": 51.07742585762252,
+    "longitude": 17.17392531551351
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 11 Wrocław",
+    "rating": -1,
+    "latitude": 51.06485678134961,
+    "longitude": 17.04297220421536
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 60 Wrocław",
+    "rating": -1,
+    "latitude": 51.175744468197024,
+    "longitude": 17.004748967570062
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa nr 5 im. Hugona Dionizego Steinhausa Wrocław",
+    "rating": -1,
+    "latitude": 51.12504679285633,
+    "longitude": 16.9976727437134
+  },
+  {
+    "year": 2024,
+    "name": "Szkoła Podstawowa American School Of Wrocław Wrocław",
+    "rating": -1,
+    "latitude": 51.06417425528078,
+    "longitude": 16.993832367248764
+  }
+]
