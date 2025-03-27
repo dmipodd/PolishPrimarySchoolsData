@@ -1036,6 +1036,15 @@
     "longitude": 16.95593736735804
   },
   {
+    "name": "Społeczna Szkoła Podstawowa Optimum Wrocław",
+    "rating2025": -1.0,
+    "rating2024": 80.829,
+    "rating2023": 0.0,
+    "rating2022": 0.0,
+    "latitude": 51.11404120419446,
+    "longitude": 17.01785970738393
+  },
+  {
     "name": "Szkoła Podstawowa American School Of Wrocław Wrocław",
     "rating2025": -1.0,
     "rating2024": 57.77,
@@ -1043,6 +1052,15 @@
     "rating2022": 0.0,
     "latitude": 51.06417425528078,
     "longitude": 16.993832367248764
+  },
+  {
+    "name": "Szkoła Podstawowa nr 11 Wrocław",
+    "rating2025": -1.0,
+    "rating2024": -1.0,
+    "rating2023": 0.0,
+    "rating2022": 0.0,
+    "latitude": 51.06485678134961,
+    "longitude": 17.04297220421536
   },
   {
     "name": "Szkoła Podstawowa nr 5 im. Hugona Dionizego Steinhausa Wrocław",
@@ -1061,23 +1079,5 @@
     "rating2022": 0.0,
     "latitude": 51.175744468197024,
     "longitude": 17.004748967570062
-  },
-  {
-    "name": "Szkoła Podstawowa nr 11 Wrocław",
-    "rating2025": -1.0,
-    "rating2024": -1.0,
-    "rating2023": 0.0,
-    "rating2022": 0.0,
-    "latitude": 51.06485678134961,
-    "longitude": 17.04297220421536
-  },
-  {
-    "name": "Społeczna Szkoła Podstawowa Optimum Wrocław",
-    "rating2025": -1.0,
-    "rating2024": -1.0,
-    "rating2023": 0.0,
-    "rating2022": 0.0,
-    "latitude": 51.11404120419446,
-    "longitude": 17.01785970738393
   }
 ]
