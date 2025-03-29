@@ -8,8 +8,26 @@ public class School {
     public double rating2024;
     public double rating2023;
     public double rating2022;
+    public double rating2021;
+    public double rating2020;
     public Double latitude;
     public Double longitude;
+
+    public double getRating2021() {
+        return rating2021;
+    }
+
+    public void setRating2021(double rating2021) {
+        this.rating2021 = rating2021;
+    }
+
+    public double getRating2020() {
+        return rating2020;
+    }
+
+    public void setRating2020(double rating2020) {
+        this.rating2020 = rating2020;
+    }
 
     public double getRating2024() {
         return rating2024;
