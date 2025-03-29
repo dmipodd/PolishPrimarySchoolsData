@@ -11,6 +11,8 @@ import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -48,6 +50,8 @@ public class UpdateSchoolRating {
                     });
         });
 
+        calculateAndSetAverageRatingForEachSchool(schools);
+
         // always sort by the latest year
         schools = schools.stream()
                 .sorted(Comparator
@@ -57,6 +61,45 @@ public class UpdateSchoolRating {
 
         String json = OBJECT_MAPPER.writeValueAsString(schools);
         System.out.println(json);
+    }
+
+    private static void calculateAndSetAverageRatingForEachSchool(List<School> schools) {
+        schools.forEach(school -> {
+            double ratingSum = 0;
+            int numberOfPresentAnnualRatings = 0;
+            if (school.getRating2025() != -1) {
+                ratingSum += school.getRating2025();
+                numberOfPresentAnnualRatings++;
+            }
+            if (school.getRating2024() != -1) {
+                ratingSum += school.getRating2024();
+                numberOfPresentAnnualRatings++;
+            }
+            if (school.getRating2023() != -1) {
+                ratingSum += school.getRating2023();
+                numberOfPresentAnnualRatings++;
+            }
+            if (school.getRating2022() != -1) {
+                ratingSum += school.getRating2022();
+                numberOfPresentAnnualRatings++;
+            }
+            if (school.getRating2021() != -1) {
+                ratingSum += school.getRating2021();
+                numberOfPresentAnnualRatings++;
+            }
+            if (school.getRating2020() != -1) {
+                ratingSum += school.getRating2020();
+                numberOfPresentAnnualRatings++;
+            }
+            school.setNumberOfPresentAnnualRatings(numberOfPresentAnnualRatings);
+            school.setAverage(ratingSum == 0 ? -1 : round(ratingSum/numberOfPresentAnnualRatings, 2));
+        });
+    }
+
+    public static double round(double value, int places) {
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 
     private static Optional<School> searchSchoolWithRatingByName(String name, List<School> schoolWithRatingList) {

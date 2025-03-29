@@ -4,14 +4,34 @@ public class School {
 
     public String name;
     public String number;
+
     public double rating2025;
     public double rating2024;
     public double rating2023;
     public double rating2022;
     public double rating2021;
     public double rating2020;
+    public double average;
+    public int numberOfPresentAnnualRatings;
+
     public Double latitude;
     public Double longitude;
+
+    public double getAverage() {
+        return average;
+    }
+
+    public void setAverage(double average) {
+        this.average = average;
+    }
+
+    public int getNumberOfPresentAnnualRatings() {
+        return numberOfPresentAnnualRatings;
+    }
+
+    public void setNumberOfPresentAnnualRatings(int numberOfPresentAnnualRatings) {
+        this.numberOfPresentAnnualRatings = numberOfPresentAnnualRatings;
+    }
 
     public double getRating2021() {
         return rating2021;

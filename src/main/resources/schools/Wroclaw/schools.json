@@ -7,6 +7,8 @@
     "rating2022": 71.408,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 75.03,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.09888568006602,
     "longitude": 17.022056854288966
   },
@@ -19,6 +21,8 @@
     "rating2022": 78.289,
     "rating2021": 78.05,
     "rating2020": 66.467,
+    "average": 77.98,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1278586,
     "longitude": 16.987563
   },
@@ -30,6 +34,8 @@
     "rating2022": 75.048,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 76.48,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.07957696804913,
     "longitude": 16.991334553277397
   },
@@ -41,6 +47,8 @@
     "rating2022": 70.496,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 72.39,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.10040741161572,
     "longitude": 17.099408397814603
   },
@@ -52,6 +60,8 @@
     "rating2022": 67.756,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 68.98,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.10686388705066,
     "longitude": 17.030301770157095
   },
@@ -63,6 +73,8 @@
     "rating2022": 63.54,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 67.02,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.03804682793872,
     "longitude": 16.97145566799425
   },
@@ -75,6 +87,8 @@
     "rating2022": 71.183,
     "rating2021": 66.56,
     "rating2020": 70.03,
+    "average": 71.6,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0880786,
     "longitude": 17.0109621
   },
@@ -87,6 +101,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 68.68,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.0802243,
     "longitude": 17.0114727
   },
@@ -98,6 +114,8 @@
     "rating2022": 71.551,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 72.07,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.11908187624817,
     "longitude": 17.04862744404158
   },
@@ -110,6 +128,8 @@
     "rating2022": 66.4,
     "rating2021": 70.96,
     "rating2020": 79.853,
+    "average": 70.64,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1203615,
     "longitude": 17.0826676
   },
@@ -122,6 +142,8 @@
     "rating2022": 68.703,
     "rating2021": 69.63,
     "rating2020": 70.097,
+    "average": 69.25,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1061467,
     "longitude": 17.0357747
   },
@@ -134,6 +156,8 @@
     "rating2022": 59.325,
     "rating2021": 56.73,
     "rating2020": 67.0,
+    "average": 62.14,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1061663,
     "longitude": 16.962453
   },
@@ -145,6 +169,8 @@
     "rating2022": 68.41,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 70.65,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.088233579603255,
     "longitude": 16.99168922240645
   },
@@ -157,6 +183,8 @@
     "rating2022": 63.416,
     "rating2021": 66.06,
     "rating2020": 78.188,
+    "average": 69.53,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.10536685036681,
     "longitude": 17.093828990255176
   },
@@ -169,6 +197,8 @@
     "rating2022": 63.02,
     "rating2021": 65.07,
     "rating2020": 71.429,
+    "average": 66.97,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.08531499683963,
     "longitude": 17.005074397214898
   },
@@ -180,6 +210,8 @@
     "rating2022": 65.909,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 64.23,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.09965216068358,
     "longitude": 17.00664371370843
   },
@@ -192,6 +224,8 @@
     "rating2022": 62.381,
     "rating2021": 70.47,
     "rating2020": -1.0,
+    "average": 67.93,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.1112974027076,
     "longitude": 17.04106056633767
   },
@@ -203,6 +237,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 71.2,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.128017676792545,
     "longitude": 16.98244957319423
   },
@@ -214,6 +250,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 66.96,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.087477129282476,
     "longitude": 17.021312496852406
   },
@@ -225,6 +263,8 @@
     "rating2022": 53.813,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 61.12,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.03559679414738,
     "longitude": 17.15306233066124
   },
@@ -237,6 +277,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 67.67,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.07644149011226,
     "longitude": 17.008047528417904
   },
@@ -249,6 +291,8 @@
     "rating2022": 62.356,
     "rating2021": 63.33,
     "rating2020": 77.789,
+    "average": 67.24,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0822137,
     "longitude": 16.990199
   },
@@ -261,6 +305,8 @@
     "rating2022": 65.901,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 65.71,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.1268691,
     "longitude": 16.9721591
   },
@@ -273,6 +319,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 65.59,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.0726189,
     "longitude": 16.9969963
   },
@@ -285,6 +333,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 66.86,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.07222536921105,
     "longitude": 17.042111786666545
   },
@@ -296,6 +346,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 66.3,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.16112657928737,
     "longitude": 17.12724499634899
   },
@@ -307,6 +359,8 @@
     "rating2022": 62.429,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 63.76,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.03068837767433,
     "longitude": 17.060792480551854
   },
@@ -319,6 +373,8 @@
     "rating2022": 58.377,
     "rating2021": 60.04,
     "rating2020": 71.195,
+    "average": 65.01,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1347752,
     "longitude": 16.8870899
   },
@@ -331,6 +387,8 @@
     "rating2022": 56.445,
     "rating2021": 53.58,
     "rating2020": 56.111,
+    "average": 56.31,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1094346,
     "longitude": 17.0604031
   },
@@ -343,6 +401,8 @@
     "rating2022": 63.371,
     "rating2021": 64.48,
     "rating2020": -1.0,
+    "average": 62.3,
+    "numberOfPresentAnnualRatings": 5,
     "latitude": 51.0688297,
     "longitude": 17.0388037
   },
@@ -354,6 +414,8 @@
     "rating2022": 64.24,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 64.45,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.02155083296394,
     "longitude": 16.91007337411257
   },
@@ -365,6 +427,8 @@
     "rating2022": 66.59,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 66.26,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.10958973569319,
     "longitude": 17.095550884244638
   },
@@ -377,6 +441,8 @@
     "rating2022": 66.517,
     "rating2021": 69.33,
     "rating2020": 73.526,
+    "average": 67.87,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.10309364039926,
     "longitude": 17.11037740683574
   },
@@ -389,6 +455,8 @@
     "rating2022": 58.161,
     "rating2021": 63.69,
     "rating2020": 70.296,
+    "average": 63.59,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0860452,
     "longitude": 17.053636
   },
@@ -401,6 +469,8 @@
     "rating2022": 63.14,
     "rating2021": 67.23,
     "rating2020": 70.363,
+    "average": 66.14,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.070214,
     "longitude": 17.0116234
   },
@@ -413,6 +483,8 @@
     "rating2022": 59.643,
     "rating2021": 61.56,
     "rating2020": 72.494,
+    "average": 64.56,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0788416,
     "longitude": 16.9650561
   },
@@ -425,6 +497,8 @@
     "rating2022": 60.626,
     "rating2021": 62.55,
     "rating2020": 75.325,
+    "average": 66.09,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0557908,
     "longitude": 17.0285439
   },
@@ -437,6 +511,8 @@
     "rating2022": 59.255,
     "rating2021": 65.84,
     "rating2020": 72.294,
+    "average": 65.2,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1181307,
     "longitude": 17.0596504
   },
@@ -448,6 +524,8 @@
     "rating2022": 60.068,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 61.97,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.13978959108765,
     "longitude": 17.1758328611169
   },
@@ -460,6 +538,8 @@
     "rating2022": 62.689,
     "rating2021": 66.54,
     "rating2020": 73.36,
+    "average": 65.69,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0773867,
     "longitude": 16.9981094
   },
@@ -472,6 +552,8 @@
     "rating2022": 57.254,
     "rating2021": 56.28,
     "rating2020": 66.5,
+    "average": 58.88,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.09287917019324,
     "longitude": 17.023197183707314
   },
@@ -484,6 +566,8 @@
     "rating2022": 51.612,
     "rating2021": 51.45,
     "rating2020": 61.372,
+    "average": 58.72,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1659642390632,
     "longitude": 17.105555518637185
   },
@@ -496,6 +580,8 @@
     "rating2022": 58.078,
     "rating2021": 63.01,
     "rating2020": 74.592,
+    "average": 64.02,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1037413,
     "longitude": 17.0362312
   },
@@ -507,6 +593,8 @@
     "rating2022": 58.782,
     "rating2021": 62.31,
     "rating2020": 73.327,
+    "average": 63.24,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.118817675683786,
     "longitude": 17.045905364315274
   },
@@ -518,6 +606,8 @@
     "rating2022": 58.786,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 60.94,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.02499391630607,
     "longitude": 17.11373019589141
   },
@@ -530,6 +620,8 @@
     "rating2022": 56.675,
     "rating2021": 57.81,
     "rating2020": 67.766,
+    "average": 60.46,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.12323793587216,
     "longitude": 16.98008600261536
   },
@@ -541,6 +633,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 57.43,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.14546991532679,
     "longitude": 16.875685137053598
   },
@@ -553,6 +647,8 @@
     "rating2022": 59.842,
     "rating2021": 62.4,
     "rating2020": 68.465,
+    "average": 61.96,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1467082,
     "longitude": 17.074175
   },
@@ -564,6 +660,8 @@
     "rating2022": 61.705,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 64.73,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.04752596514967,
     "longitude": 17.007873859630102
   },
@@ -576,6 +674,8 @@
     "rating2022": 60.399,
     "rating2021": 60.76,
     "rating2020": 59.174,
+    "average": 59.77,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1356256,
     "longitude": 17.0563696
   },
@@ -587,6 +687,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 60.5,
+    "numberOfPresentAnnualRatings": 1,
     "latitude": 51.10273887372642,
     "longitude": 17.023892226255573
   },
@@ -599,6 +701,8 @@
     "rating2022": 57.968,
     "rating2021": 61.23,
     "rating2020": 67.033,
+    "average": 61.65,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0952302,
     "longitude": 16.9505374
   },
@@ -611,6 +715,8 @@
     "rating2022": 51.59,
     "rating2021": 54.09,
     "rating2020": 57.742,
+    "average": 56.5,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0595893,
     "longitude": 17.0819031
   },
@@ -623,6 +729,8 @@
     "rating2022": 51.786,
     "rating2021": 51.0,
     "rating2020": 60.639,
+    "average": 56.17,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0942237,
     "longitude": 16.9860356
   },
@@ -635,6 +743,8 @@
     "rating2022": 51.192,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 55.88,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.1469067,
     "longitude": 17.1106459
   },
@@ -647,6 +757,8 @@
     "rating2022": 56.129,
     "rating2021": 60.84,
     "rating2020": 68.665,
+    "average": 62.2,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1030146,
     "longitude": 17.1545972
   },
@@ -658,6 +770,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 62.93,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.09321611592778,
     "longitude": 17.03133575859428
   },
@@ -670,6 +784,8 @@
     "rating2022": 59.332,
     "rating2021": 58.26,
     "rating2020": 66.966,
+    "average": 60.7,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1270026,
     "longitude": 16.9450144
   },
@@ -682,6 +798,8 @@
     "rating2022": 59.783,
     "rating2021": 54.09,
     "rating2020": 65.701,
+    "average": 58.45,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.154594,
     "longitude": 16.9293248
   },
@@ -694,6 +812,8 @@
     "rating2022": 60.354,
     "rating2021": 55.89,
     "rating2020": 59.574,
+    "average": 58.24,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1212701,
     "longitude": 16.9265767
   },
@@ -706,6 +826,8 @@
     "rating2022": 57.487,
     "rating2021": 57.9,
     "rating2020": 70.496,
+    "average": 60.95,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0870219,
     "longitude": 17.0379323
   },
@@ -718,6 +840,8 @@
     "rating2022": 41.549,
     "rating2021": 49.56,
     "rating2020": 47.153,
+    "average": 50.99,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.08742051732068,
     "longitude": 17.043140344666
   },
@@ -729,6 +853,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 57.62,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.09396351289426,
     "longitude": 17.062063955373226
   },
@@ -741,6 +867,8 @@
     "rating2022": 58.733,
     "rating2021": 58.08,
     "rating2020": 69.963,
+    "average": 61.27,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1367609,
     "longitude": 17.0271165
   },
@@ -753,6 +881,8 @@
     "rating2022": 57.583,
     "rating2021": 64.05,
     "rating2020": 73.626,
+    "average": 62.91,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1440734,
     "longitude": 17.1315483
   },
@@ -764,6 +894,8 @@
     "rating2022": 54.652,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 59.44,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.0734524841172,
     "longitude": 16.882058380658446
   },
@@ -775,6 +907,8 @@
     "rating2022": 60.441,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 60.44,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.07742585762252,
     "longitude": 17.17392531551351
   },
@@ -787,6 +921,8 @@
     "rating2022": 60.659,
     "rating2021": 54.66,
     "rating2020": 61.172,
+    "average": 57.68,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.16278916901751,
     "longitude": 16.906785549487925
   },
@@ -798,6 +934,8 @@
     "rating2022": 57.879,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 56.36,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.034959771041,
     "longitude": 17.146705221097402
   },
@@ -809,6 +947,8 @@
     "rating2022": 46.444,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 50.47,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.132101666976624,
     "longitude": 17.082590382409823
   },
@@ -821,6 +961,8 @@
     "rating2022": 51.596,
     "rating2021": 59.13,
     "rating2020": 59.241,
+    "average": 57.18,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1417497,
     "longitude": 17.0349517
   },
@@ -833,6 +975,8 @@
     "rating2022": 51.582,
     "rating2021": 51.57,
     "rating2020": 64.635,
+    "average": 56.6,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1187679,
     "longitude": 17.0091752
   },
@@ -845,6 +989,8 @@
     "rating2022": 42.767,
     "rating2021": 47.04,
     "rating2020": 50.683,
+    "average": 50.32,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1177293,
     "longitude": 17.0560189
   },
@@ -857,6 +1003,8 @@
     "rating2022": 54.25,
     "rating2021": 53.76,
     "rating2020": 58.775,
+    "average": 57.68,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.15774246006723,
     "longitude": 17.136406420117865
   },
@@ -869,6 +1017,8 @@
     "rating2022": 65.913,
     "rating2021": 66.3,
     "rating2020": 80.053,
+    "average": 68.24,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.09847780739776,
     "longitude": 17.0115822159838
   },
@@ -881,6 +1031,8 @@
     "rating2022": 58.078,
     "rating2021": 52.86,
     "rating2020": 68.099,
+    "average": 60.12,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.06468031123327,
     "longitude": 16.973031771752026
   },
@@ -893,6 +1045,8 @@
     "rating2022": 55.896,
     "rating2021": 51.63,
     "rating2020": 65.002,
+    "average": 56.89,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1422986,
     "longitude": 16.9901206
   },
@@ -904,6 +1058,8 @@
     "rating2022": 49.507,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 52.52,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.13377551169363,
     "longitude": 16.78165974459179
   },
@@ -916,6 +1072,8 @@
     "rating2022": -1.0,
     "rating2021": 55.56,
     "rating2020": -1.0,
+    "average": 55.29,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.13505887488106,
     "longitude": 16.97174595419211
   },
@@ -927,6 +1085,8 @@
     "rating2022": 55.86,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 54.99,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.187508905817104,
     "longitude": 17.031281243901898
   },
@@ -938,6 +1098,8 @@
     "rating2022": 58.336,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 58.95,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.110643902789604,
     "longitude": 17.004946820858788
   },
@@ -950,6 +1112,8 @@
     "rating2022": 48.118,
     "rating2021": 49.26,
     "rating2020": 60.906,
+    "average": 54.06,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1172809,
     "longitude": 16.9513679
   },
@@ -961,6 +1125,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 57.11,
+    "numberOfPresentAnnualRatings": 2,
     "latitude": 51.11776950260578,
     "longitude": 17.02056099370241
   },
@@ -973,6 +1139,8 @@
     "rating2022": 52.105,
     "rating2021": 51.48,
     "rating2020": 63.337,
+    "average": 55.75,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.15051,
     "longitude": 16.8943032
   },
@@ -985,6 +1153,8 @@
     "rating2022": 55.633,
     "rating2021": 61.74,
     "rating2020": 73.327,
+    "average": 60.38,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0785052,
     "longitude": 17.0430864
   },
@@ -997,6 +1167,8 @@
     "rating2022": 52.55,
     "rating2021": 44.19,
     "rating2020": 53.813,
+    "average": 52.28,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1502591,
     "longitude": 16.8596439
   },
@@ -1009,6 +1181,8 @@
     "rating2022": 50.168,
     "rating2021": 55.23,
     "rating2020": 62.204,
+    "average": 55.39,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0779023,
     "longitude": 17.0808861
   },
@@ -1021,6 +1195,8 @@
     "rating2022": 60.633,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 59.42,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.1096507,
     "longitude": 17.0961325
   },
@@ -1033,6 +1209,8 @@
     "rating2022": 57.184,
     "rating2021": 48.18,
     "rating2020": 58.508,
+    "average": 54.36,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1371894,
     "longitude": 16.9556299
   },
@@ -1045,6 +1223,8 @@
     "rating2022": 45.769,
     "rating2021": 47.82,
     "rating2020": 56.976,
+    "average": 51.64,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.104642935476896,
     "longitude": 17.018636818490382
   },
@@ -1057,6 +1237,8 @@
     "rating2022": 46.917,
     "rating2021": 49.59,
     "rating2020": 57.676,
+    "average": 50.74,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1322401,
     "longitude": 17.1073088
   },
@@ -1069,6 +1251,8 @@
     "rating2022": 40.79,
     "rating2021": 39.84,
     "rating2020": 45.255,
+    "average": 42.65,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1207084,
     "longitude": 17.0351294
   },
@@ -1081,6 +1265,8 @@
     "rating2022": 50.999,
     "rating2021": 46.86,
     "rating2020": 56.344,
+    "average": 51.53,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0971886,
     "longitude": 17.016425
   },
@@ -1093,6 +1279,8 @@
     "rating2022": 39.318,
     "rating2021": 46.47,
     "rating2020": 55.445,
+    "average": 47.98,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1034431,
     "longitude": 17.0410194
   },
@@ -1104,6 +1292,8 @@
     "rating2022": 44.066,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 46.85,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.09716557302462,
     "longitude": 17.002881939622466
   },
@@ -1116,6 +1306,8 @@
     "rating2022": 53.858,
     "rating2021": 56.37,
     "rating2020": 68.998,
+    "average": 57.96,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1050785,
     "longitude": 17.0269149
   },
@@ -1128,6 +1320,8 @@
     "rating2022": 52.508,
     "rating2021": 59.01,
     "rating2020": 62.904,
+    "average": 55.29,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1170484,
     "longitude": 17.0066949
   },
@@ -1140,6 +1334,8 @@
     "rating2022": 46.782,
     "rating2021": 47.61,
     "rating2020": 59.274,
+    "average": 50.6,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1197472,
     "longitude": 17.0495775
   },
@@ -1152,6 +1348,8 @@
     "rating2022": 47.418,
     "rating2021": 47.1,
     "rating2020": 52.88,
+    "average": 50.7,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1407156,
     "longitude": 16.9674973
   },
@@ -1163,6 +1361,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 44.19,
+    "numberOfPresentAnnualRatings": 1,
     "latitude": 51.11734502643819,
     "longitude": 17.014454879341898
   },
@@ -1175,6 +1375,8 @@
     "rating2022": 43.397,
     "rating2021": 48.96,
     "rating2020": 53.38,
+    "average": 48.53,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.0971699189122,
     "longitude": 17.002896869650925
   },
@@ -1187,6 +1389,8 @@
     "rating2022": 38.45,
     "rating2021": 37.29,
     "rating2020": 43.756,
+    "average": 38.29,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1198636,
     "longitude": 17.0272735
   },
@@ -1199,6 +1403,8 @@
     "rating2022": 44.094,
     "rating2021": 41.43,
     "rating2020": 51.548,
+    "average": 43.68,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.1276068,
     "longitude": 17.0529381
   },
@@ -1211,6 +1417,8 @@
     "rating2022": 39.035,
     "rating2021": 46.29,
     "rating2020": 49.55,
+    "average": 44.13,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.126674,
     "longitude": 17.0344114
   },
@@ -1223,6 +1431,8 @@
     "rating2022": 35.311,
     "rating2021": 37.2,
     "rating2020": 46.254,
+    "average": 41.51,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.105869,
     "longitude": 17.0469301
   },
@@ -1235,6 +1445,8 @@
     "rating2022": 40.306,
     "rating2021": 33.93,
     "rating2020": 41.225,
+    "average": 39.69,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.095963,
     "longitude": 17.0573477
   },
@@ -1246,6 +1458,8 @@
     "rating2022": 27.986,
     "rating2021": 25.74,
     "rating2020": 31.635,
+    "average": 30.24,
+    "numberOfPresentAnnualRatings": 6,
     "latitude": 51.11526327544377,
     "longitude": 16.95593736735804
   },
@@ -1257,6 +1471,8 @@
     "rating2022": 71.733,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 76.54,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.11404120419446,
     "longitude": 17.01785970738393
   },
@@ -1268,6 +1484,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 57.77,
+    "numberOfPresentAnnualRatings": 1,
     "latitude": 51.06417425528078,
     "longitude": 16.993832367248764
   },
@@ -1279,6 +1497,8 @@
     "rating2022": 72.282,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": 73.66,
+    "numberOfPresentAnnualRatings": 3,
     "latitude": 51.175744468197024,
     "longitude": 17.004748967570062
   },
@@ -1290,6 +1510,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": -1.0,
+    "numberOfPresentAnnualRatings": 0,
     "latitude": 51.06485678134961,
     "longitude": 17.04297220421536
   },
@@ -1301,6 +1523,8 @@
     "rating2022": 64.24,
     "rating2021": 65.49,
     "rating2020": -1.0,
+    "average": 65.36,
+    "numberOfPresentAnnualRatings": 4,
     "latitude": 51.12504679285633,
     "longitude": 16.9976727437134
   },
@@ -1312,6 +1536,8 @@
     "rating2022": -1.0,
     "rating2021": -1.0,
     "rating2020": -1.0,
+    "average": -1.0,
+    "numberOfPresentAnnualRatings": 0,
     "latitude": 51.175744468197024,
     "longitude": 17.004748967570062
   }
