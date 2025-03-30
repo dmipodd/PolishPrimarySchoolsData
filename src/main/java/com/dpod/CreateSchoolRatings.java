@@ -21,7 +21,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class WebScraper {
+public class CreateSchoolRatings {
 
     public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
@@ -29,7 +29,9 @@ public class WebScraper {
         OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         List<School> schoolWithRatingList = new ArrayList<>();
         // Connect to the webpage and fetch its HTML content
-        URL htmlFile = WebScraper.class.getResource("/Ranking Szkół Podstawowych Wrocław 2025.html");
+        URL htmlFile = CreateSchoolRatings.class.getResource("/Ranking Szkół Podstawowych Poznań 2025.html");
+        // taken from https://wielkopolskie.szkolypodstawowe.edubaza.pl/mapa.php?pok=17689&pod=2&c1m=286&c1=15&c2=425
+        String scrptFile = "/script_with_geo_poznan.js";
         Document doc = Jsoup.parse(new File(htmlFile.toURI()), StandardCharsets.UTF_8.name());
 
         // Select all <td> elements
@@ -66,10 +68,9 @@ public class WebScraper {
         List<School> schoolsWithoutNumbers = partitionedList.get(false);
 
         // print json without coordinates
-
-        List<String> lines = Files.readAllLines(Path.of(WebScraper.class.getResource("/script_with_geo_wroclaw.js").toURI()));
+        List<String> lines = Files.readAllLines(Path.of(CreateSchoolRatings.class.getResource(scrptFile).toURI()));
         List<School> schoolWithGeodataList = lines.stream()
-                .map(WebScraper::extractValues)
+                .map(CreateSchoolRatings::extractValues)
                 .toList();
 
 
@@ -156,7 +157,11 @@ public class WebScraper {
         Pattern pattern = Pattern.compile("Szkoła Podstawowa nr (.*?) .*");
         Matcher matcher = pattern.matcher(text);
         if (matcher.find()) {
-            return matcher.group(1);
+            String number = matcher.group(1);
+            if (text.contains("Społeczna Szkoła Podstawowa")) {
+                return "ssp_" + number;
+            }
+            return number;
         }
         return null;
     }
