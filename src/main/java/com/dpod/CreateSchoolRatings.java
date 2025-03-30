@@ -21,6 +21,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+/**
+ * todo refactor everything
+ * current state of code is worse then the worst but it works :-D
+ * To add a new city - use CreateSchoolRatings. To update existing city rating - run UpdateSchoolRating.
+ * To get full data for some particular schools - use UpdateSchoolRatingForSnippet.
+ */
 public class CreateSchoolRatings {
 
     public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
