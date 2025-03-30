@@ -6529,5 +6529,18 @@
     "numberOfPresentAnnualRatings": 2,
     "latitude": 52.22556,
     "longitude": 21.06828
+  },
+  {
+    "name": "Szkoła Podstawowa im. Witolda Doroszewskiego Nadarzyn",
+    "rating2025": 58.416,
+    "rating2024": 56.403,
+    "rating2023": 59.461,
+    "rating2022": 58.618,
+    "rating2021": -1.0,
+    "rating2020": -1.0,
+    "average": 58.22,
+    "numberOfPresentAnnualRatings": 4,
+    "latitude": 52.09652876223528,
+    "longitude": 20.809495627461153
   }
 ]
