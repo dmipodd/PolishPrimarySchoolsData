@@ -631,20 +631,7 @@
   },
   {
     "name": "Szkoła Podstawowa nr 23 im. gen.Józefa Bema Poznań",
-    "number": "9",
-    "rating2025": -1,
-    "rating2024": -1,
-    "rating2023": -1,
-    "rating2022": -1,
-    "rating2021": -1,
-    "rating2020": -1,
-    "average": -1,
-    "numberOfPresentAnnualRatings": 6,
-    "latitude": 52.41618563051199,
-    "longitude": 16.910274643987933
-  },
-  {
-    "name": "Szkoła Podstawowa nr 23 im. gen.Józefa Bema Poznań",
+    "number": "23",
     "rating2025": 42.672,
     "rating2024": 46.55,
     "rating2023": 47.096,
