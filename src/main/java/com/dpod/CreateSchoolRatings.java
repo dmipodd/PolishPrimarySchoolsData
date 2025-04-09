@@ -4,6 +4,7 @@ import com.dpod.bean.School;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.tuple.Triple;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -17,6 +18,8 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BiConsumer;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -24,7 +27,6 @@ import java.util.stream.Collectors;
 /**
  * todo refactor everything
  * current state of code is worse then the worst but it works :-D
- * To add a new city - use CreateSchoolRatings. To update existing city rating - run UpdateSchoolRating.
  * To get full data for some particular schools - use UpdateSchoolRatingForSnippet.
  */
 public class CreateSchoolRatings {
@@ -32,13 +34,16 @@ public class CreateSchoolRatings {
     public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     public static void main(String[] args) throws Exception {
+        var city = "Gdynia";
+        var year = 2025;
+
+        String scriptFile = String.format("/js/script_with_geo_%s.js", city);
+        String htmlFile = String.format("/html/%s/Ranking Szkół Podstawowych %s %s.html", city, city, year);
+
         OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         List<School> schoolWithRatingList = new ArrayList<>();
-        // Connect to the webpage and fetch its HTML content
-        URL htmlFile = CreateSchoolRatings.class.getResource("/Ranking Szkół Podstawowych Poznań 2025.html");
-        // taken from https://wielkopolskie.szkolypodstawowe.edubaza.pl/mapa.php?pok=17689&pod=2&c1m=286&c1=15&c2=425
-        String scrptFile = "/script_with_geo_poznan.js";
-        Document doc = Jsoup.parse(new File(htmlFile.toURI()), StandardCharsets.UTF_8.name());
+        URL htmlFileUrl = CreateSchoolRatings.class.getResource(htmlFile);
+        Document doc = Jsoup.parse(new File(htmlFileUrl.toURI()), StandardCharsets.UTF_8.name());
 
         // Select all <td> elements
         Elements trElements = doc.select("tr");
@@ -74,9 +79,9 @@ public class CreateSchoolRatings {
         List<School> schoolsWithoutNumbers = partitionedList.get(false);
 
         // print json without coordinates
-        List<String> lines = Files.readAllLines(Path.of(CreateSchoolRatings.class.getResource(scrptFile).toURI()));
+        List<String> lines = Files.readAllLines(Path.of(CreateSchoolRatings.class.getResource(scriptFile).toURI()));
         List<School> schoolWithGeodataList = lines.stream()
-                .map(CreateSchoolRatings::extractValues)
+                .map(name -> extractValues(name, city))
                 .toList();
 
 
@@ -108,23 +113,24 @@ public class CreateSchoolRatings {
         }
         List<School> schoolsWithoutGeoData = mapByNumber.values().stream().peek(School::setZeroGeo).toList();
 
+        List.of(
+                Triple.<Integer, BiConsumer<School, Double>, Function<School, Double>>of(2024, School::setRating2024, School::getRating2024),
+                Triple.<Integer, BiConsumer<School, Double>, Function<School, Double>>of(2023, School::setRating2023, School::getRating2023),
+                Triple.<Integer, BiConsumer<School, Double>, Function<School, Double>>of(2022, School::setRating2022, School::getRating2022)
+        ).forEach(triple -> RatingUpdater.updateRatingForSchools(triple.getLeft(), triple.getMiddle(), triple.getRight(), schoolsWithFullData));
+
         String json = OBJECT_MAPPER.writeValueAsString(schoolsWithFullData);
+        System.out.println("\n----- The result JSON with schools having both GEO and rating data -----\n");
         System.out.println(json);
-        System.out.println("-----------------------------------------");
-        json = OBJECT_MAPPER.writeValueAsString(schoolsWithoutGeoData);
-        System.out.println(json);
-        System.out.println("-----------------------------------------");
-        //.collect(Collectors.partitioningBy(school -> StringUtils.isNotBlank(school.number)));
-//        List<School> schoolsWithNumbersFromJS = partitionedList.get(true);
-//        List<School> schoolsWithoutNumbersFromJS = partitionedList.get(false);
-
-
+        System.out.println("------------------------------------");
+        System.out.println("\n----- Schools with rating but without GEO data -----\n");
+        schoolsWithoutGeoData.forEach(school -> System.out.println(school.name));
+        System.out.println("\n----- Schools with GEO data but without rating -----\n");
+        schoolsWithoutRating.forEach(school -> System.out.println(school.name));
     }
 
-
-
-    public static School extractValues(String input) {
-        Pattern pattern = Pattern.compile("gm_punkt\\('\\d+','(.*?)','(.*?)', \\\"<b>(.*?)</b>");
+    public static School extractValues(String input, String city) {
+        Pattern pattern = Pattern.compile("gm_punkt\\('\\d+',\\s?'(.*?)',\\s?'(.*?)',\\s?\"<b>(.*?)</b>");
         Matcher matcher = pattern.matcher(input);
         String name = "";
         if (matcher.find()) {
@@ -132,7 +138,7 @@ public class CreateSchoolRatings {
             String longitude = matcher.group(2);
             name = matcher.group(3);
 
-            name += " Wrocław";
+            name += " " + city;
 
             System.out.println("Latitude: " + latitude);
             System.out.println("Longitude: " + longitude);

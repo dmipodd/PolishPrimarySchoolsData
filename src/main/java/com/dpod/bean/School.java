@@ -5,13 +5,13 @@ public class School {
     public String name;
     public String number;
 
-    public double rating2025;
-    public double rating2024;
-    public double rating2023;
-    public double rating2022;
-    public double rating2021;
-    public double rating2020;
-    public double average;
+    public double rating2025 = -1;
+    public double rating2024 = -1;
+    public double rating2023 = -1;
+    public double rating2022 = -1;
+    public double rating2021 = -1;
+    public double rating2020 = -1;
+    public double average = -1;
     public int numberOfPresentAnnualRatings;
 
     public Double latitude;

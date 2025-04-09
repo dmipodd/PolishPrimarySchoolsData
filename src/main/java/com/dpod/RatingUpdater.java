@@ -1,10 +1,6 @@
 package com.dpod;
 
 import com.dpod.bean.School;
-import com.dpod.bean.YearConfig;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -22,45 +18,15 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BiConsumer;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UpdateSchoolRatingForSnippet {
+public class RatingUpdater {
 
-    public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
-
-    public static void main(String[] args) throws Exception {
-        String jsonPath = "/json/snippet.json";
-
-        List<YearConfig> yearConfigList = List.of(
-                new YearConfig(
-                        "html/Poland/Ranking Szkół Podstawowych 2025.html", 2025, School::setRating2025, School::getRating2025
-                ),
-                new YearConfig(
-                        "html/Poland/Ranking Szkół Podstawowych 2024.html", 2024, School::setRating2024, School::getRating2024
-                ),
-                new YearConfig(
-                        "html/Poland/Ranking Szkół Podstawowych 2023.html", 2023, School::setRating2023, School::getRating2023
-                ),
-                new YearConfig(
-                        "html/Poland/Ranking Szkół Podstawowych 2022.html", 2022, School::setRating2022, School::getRating2022
-                )/*,
-                new YearConfig(
-                        "html/Poznan/Ranking Szkół Podstawowych Poznan 2021.html", 2021, School::setRating2021, School::getRating2021
-                ),
-                new YearConfig(
-                        "html/Poznan/Ranking Szkół Podstawowych Poznan 2020.html", 2020, School::setRating2020, School::getRating2020
-                )*/
-        );
-
-        OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        List<School> schools = OBJECT_MAPPER.readValue(UpdateSchoolRatingForSnippet.class.getResource(jsonPath), new TypeReference<>() {
-        });
-
-        for (var yearConfig: yearConfigList) {
-            var rankingSetter = yearConfig.rankingSetter();
-            var rankingGetter = yearConfig.rankingGetter();
-            List<School> schoolWithRatingList = readSchoolRatingList(yearConfig.year(), "/" + yearConfig.fileWithRatings(), rankingSetter);
+    public static List<School> updateRatingForSchools(int year, BiConsumer<School, Double> rankingSetter, Function<School, Double> rankingGetter, List<School> schools) {
+        try {
+            List<School> schoolWithRatingList = readSchoolRatingList("/html/Poland/Ranking Szkół Podstawowych " + year + ".html", rankingSetter);
             schools.forEach(school -> {
                 String name = school.name;
                 searchSchoolWithRatingByName(name, schoolWithRatingList).ifPresentOrElse(
@@ -70,19 +36,21 @@ public class UpdateSchoolRatingForSnippet {
                             rankingSetter.accept(school, -1d);
                         });
             });
+
+            calculateAndSetAverageRatingForEachSchool(schools);
+
+            // always sort by the latest year
+            var schoolsUpdated = schools.stream()
+                    .sorted(Comparator
+                            .comparing(School::getRating2025).reversed()
+                            .thenComparing(School::getName))
+                    .toList();
+            schools.clear();
+            schools.addAll(schoolsUpdated);
+            return schools;
+        } catch (URISyntaxException | IOException e) {
+            throw new RuntimeException(e);
         }
-
-        calculateAndSetAverageRatingForEachSchool(schools);
-
-        // always sort by the latest year
-        schools = schools.stream()
-                .sorted(Comparator
-                        .comparing(School::getRating2025).reversed()
-                        .thenComparing(School::getName))
-                .toList();
-
-        String json = OBJECT_MAPPER.writeValueAsString(schools);
-        System.out.println(json);
     }
 
     private static void calculateAndSetAverageRatingForEachSchool(List<School> schools) {
@@ -114,7 +82,7 @@ public class UpdateSchoolRatingForSnippet {
                 numberOfPresentAnnualRatings++;
             }
             school.setNumberOfPresentAnnualRatings(numberOfPresentAnnualRatings);
-            school.setAverage(ratingSum == 0 ? -1 : round(ratingSum/numberOfPresentAnnualRatings, 2));
+            school.setAverage(ratingSum == 0 ? -1 : round(ratingSum / numberOfPresentAnnualRatings, 2));
         });
     }
 
@@ -130,34 +98,32 @@ public class UpdateSchoolRatingForSnippet {
                 .findFirst();
     }
 
-    private static List<School> readSchoolRatingList(int year, String filename, BiConsumer<School, Double> rankingSetter) throws IOException, URISyntaxException {
+    private static List<School> readSchoolRatingList(String filename, BiConsumer<School, Double> rankingSetter) throws IOException, URISyntaxException {
         List<School> schoolWithRatingList = new ArrayList<>();
         // Connect to the webpage and fetch its HTML content
-        URL htmlFile = UpdateSchoolRatingForSnippet.class.getResource(filename);
+        URL htmlFile = UpdateSchoolRating.class.getResource(filename);
         Document doc = Jsoup.parse(new File(htmlFile.toURI()), StandardCharsets.UTF_8.name());
 
         // Select all <td> elements
         Elements trElements = doc.select("tr");
 
-
+        // Loop through each <td> element
         for (Element tr : trElements) {
+            // Select all <a> elements nested within the current <td> element
             Elements tdElements = tr.select("td");
 
-            int maxTdCount = year > 2021 ? 4 : 3;
-            int tdIndexForRanking = year > 2021 ? 3 : 2;
-            int tdIndexForLink = year > 2021 ? 2 : 1;
-
-            if (tdElements.size() < maxTdCount) {
+            if (tdElements.size() < 4) {
                 continue;
             }
 
-            Element tdWithA = tdElements.get(tdIndexForLink);
+            // Loop through each <a> element
+            Element tdWithA = tdElements.get(2);
             Elements aElements = tdWithA.select("a");
             if (aElements.isEmpty()) {
                 continue;
             }
             String text = aElements.get(0).text();
-            Element tdRanking = tdElements.get(tdIndexForRanking);
+            Element tdRanking = tdElements.get(3);
             String ratingAsString = tdRanking.text().split(" ")[0];
             School school = createSchoolRating(text, ratingAsString, rankingSetter);
             schoolWithRatingList.add(school);
@@ -166,34 +132,6 @@ public class UpdateSchoolRatingForSnippet {
             System.out.println(text + "," + ratingAsString);
         }
         return schoolWithRatingList;
-    }
-
-
-    public static School extractValues(String input) {
-        Pattern pattern = Pattern.compile("gm_punkt\\('\\d+','(.*?)','(.*?)', \\\"<b>(.*?)</b>");
-        Matcher matcher = pattern.matcher(input);
-        String name = "";
-        if (matcher.find()) {
-            String latitude = matcher.group(1);
-            String longitude = matcher.group(2);
-            name = matcher.group(3);
-
-            name += " Wrocław";
-
-            System.out.println("Latitude: " + latitude);
-            System.out.println("Longitude: " + longitude);
-            System.out.println("Name: " + name);
-
-            School school = new School();
-            school.setName(name);
-            school.setNumber(getSchoolNumber(name));
-            school.setLatitude(Double.parseDouble(latitude));
-            school.setLongitude(Double.parseDouble(longitude));
-            return school;
-        } else {
-            System.out.println("No match found.");
-        }
-        throw new IllegalStateException();
     }
 
     private static School createSchoolRating(String text, String ratingAsString, BiConsumer<School, Double> rankingSetter) {
