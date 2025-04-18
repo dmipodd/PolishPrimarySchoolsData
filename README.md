@@ -11,10 +11,11 @@ You will need
 1. Save the web page with ratings for the city, that is available at https://waszaedukacja.pl/ranking/{city}/szkoly-podstawowe, to a file 
    {project}\src\main\resources\html\{city}\Ranking Szkół Podstawowych {city} {year}.html
 2. Download .js file for the {city} with GEO data. For this go to https://szkolypodstawowe.edubaza.pl, select your state(województwo), then city and "all schools" ("wszystkie"), then click map link on the right.
-   Then press F12, find the javascript code with gm_punkt() function calls and copy all of them to {project}\src\main\resources\js\script_with_geo_{city}.js. 
+   Then press F12, find the javascript code with gm_punkt() function calls and copy all of them to {project}\src\main\resources\js\script_with_geo_{city}.js.
+   ![js with geo data](readmeImages/js_with_GEO_data.png)
 3. Update 2 variables at the very first lines of CreateSchoolRatings.main() to the {city} and current year accordingly 
 4. Run CreateSchoolRatings. The result will be printed to console. Copy json from console to {project}\src\main\resources\json\{city}\schools.json for future use in UI.
-
+   ![result](readmeImages/add_city_result.png)
 
 Let's add Gdynia as an example.
 1. Save https://waszaedukacja.pl/ranking/gdynia/szkoly-podstawowe to "{project}\src\main\resources\html\gdynia\Ranking Szkół Podstawowych Gdynia 2025.html"
