@@ -1,10 +1,15 @@
 # PolishPrimarySchoolsData
 
-rankings for 2025, 2024, 2023, 2022 are available for a whole Poland.
+The project is a set of Java-based mini-apps designed to prepare primary school rankings data across Poland. 
+It provides nationwide rankings for the years 2022–2025 and major city rankings for 2020–2021, 
+sourced from waszaedukacja.pl (calculated ranking) and from edubaza.pl (geographic data). 
 
-rankings for 2021, 2020 are available only for big cities, e.g.
+Rankings for 2025, 2024, 2023, 2022 are available for the whole of Poland.
+Rankings for 2021, 2020 are available only for big cities by URLs:
+https://waszaedukacja.pl/ranking/{city}/szkoly-podstawowe/2021
+https://waszaedukacja.pl/ranking/{city}/szkoly-podstawowe/2020
+e.g.
 https://waszaedukacja.pl/ranking/warszawa/szkoly-podstawowe/2020
-
 
 ## To add a new city - use CreateSchoolRatings.
 You will need
